@@ -21,8 +21,9 @@ useEffect(() => {
     <div className='home'>
       <AdBanner />
       <input type="text" placeholder='Search for a recipe' />
+      <div className='recipe-container'>
       {recipes.map(recipe=> <RecipeCard recipe={recipe}/>)}
-
+      </div>
     </div>
   )
 }
