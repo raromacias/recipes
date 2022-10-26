@@ -1,0 +1,77 @@
+/* --------- This is CSS Reset Code --------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* --------- Begin your CSS Below here --------- */
+
+* {
+	box-sizing: border-box;
+}
+Header {
+	height: 60px;
+	display:flex;
+	background-color: #D97236;
+	color: white;
+	justify-content:space-around;
+}
+
+Footer {
+	display:flex;
+	height: 150px;
+	background-color: #3E3E3E;
+	color: white;
+	justify-content: space-around;
+	position:fixed;
+	bottom: 0%;
+	width: 100%;
+	
+}
+
+.ad {
+	display:flex ;
+	text-align: center;
+}
+
+
+
+
+.icon {
+	height: 50px ;
+	width: 50px;
+	border-radius: 50%;
+    margin: 10px;
+	display: inline-block;
+	background-color: #578B87;
+}
+
+.recipe-card{
+display: flex;
+   flex-wrap: wrap;
+   width: 50px;
+   margin: 10px;
+   box-shadow: 2px 2px gray;
+}
+
+.recipe-card>NavLink {
+	background-color: #578B87;
+	border-radius: 20%;
+	height: 40px;
+}
