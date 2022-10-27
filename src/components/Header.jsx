@@ -1,12 +1,31 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
+import classes from "../App.css";
 
 const Header = () => {
+  const activeStyle = {
+    color: "green"
+  }
   return (
-    <header>
+    <header className={classes.header}>
       <h2>Devmountain Eatery</h2>
       <nav className="links">
-         <Link style={{color:'white'}}className="home" to='/'>Home</Link><Link style={{color:'white'}} classname='new' to='/new-recipe'>Add Recipe</Link>
+        <NavLink 
+        to="" 
+        style={({ isActive }) => ({
+          color: isActive ? '#fff' : 'black',
+          textDecoration: isActive ? 'underline' : 'none',
+          fontWeight: isActive ? '600' : '',
+        })}
+        
+          >Home</NavLink>
+        <NavLink to="/new-recipe" style={({ isActive }) => ({
+          color: isActive ? '#fff' : '#fff',
+          textDecoration: isActive ? 'underline' : 'none',
+          fontWeight: isActive ? '600' : '',
+        })}
+           >Add to Recipe
+        </NavLink>
       </nav>
     </header>
   );

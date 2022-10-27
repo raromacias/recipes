@@ -4,7 +4,7 @@ const RecipeCard = ({recipe}) => {
 
     return (
         <div className="recipe-card" >
-            <div>
+            <div className="image">
                 <img  style={{height: '100px', width: '100px' }} src={`${recipe.image_url}`}/>
                 {recipe.recipe_name}
             </div>

@@ -24,16 +24,39 @@ time, mark, audio, video {
 
 * {
 	box-sizing: border-box;
+
 }
-Header {
+header {
 	height: 60px;
 	display:flex;
+	flex-direction: row;
 	background-color: #D97236;
 	color: white;
-	justify-content:space-around;
+	justify-content:space-between;
+	position: sticky;
+	top: 0%;
+	font-weight: 300;
+	padding: 0px 50px;
+	align-items: center;	
 }
 
-Footer {
+/* .nav-btn {
+	background-color: #D97236 ;
+	border: none;
+	color: white;
+	font-size: large;
+} */
+
+
+
+.header a.active ,
+.header a:active
+.header a:hover{
+	color:red;
+	font-weight: bolder;
+}
+
+footer {
 	display:flex;
 	height: 150px;
 	background-color: #3E3E3E;
@@ -43,6 +66,8 @@ Footer {
 	bottom: 0%;
 	width: 100%;
 	
+
+	
 }
 
 .ad {
@@ -50,7 +75,11 @@ Footer {
 	text-align: center;
 }
 
-
+img {
+	object-fit: cover;
+	height: 100%;
+	width:100%;
+}
 
 
 .icon {
@@ -60,12 +89,13 @@ Footer {
     margin: 10px;
 	display: inline-block;
 	background-color: #578B87;
+	
 }
 
 .recipe-card{
-display: flex;
-   flex-wrap: wrap;
-   width: 10%;
+   display: flex;
+   flex-direction: column;
+   width: 300px;
    margin: 10%;
    box-shadow: 2px 5px gray;
    
@@ -76,5 +106,21 @@ display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
 	text-align: center;
+	width: 300px;
 }
 
+.allIcons {
+	text-align: center;
+	margin-top: 35px;
+}
+
+svg {
+	
+		margin-top: 12px;
+		
+	
+}
+
+h2 {
+	font-size: 24px;
+}
