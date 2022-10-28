@@ -3,14 +3,13 @@ import { NavLink } from "react-router-dom";
 import classes from "../App.css";
 
 const Header = () => {
-  const activeStyle = {
-    color: "green"
-  }
+ 
   return (
     <header className={classes.header}>
       <h2>Devmountain Eatery</h2>
       <nav className="links">
         <NavLink 
+        end
         to="" 
         style={({ isActive }) => ({
           color: isActive ? '#fff' : 'black',

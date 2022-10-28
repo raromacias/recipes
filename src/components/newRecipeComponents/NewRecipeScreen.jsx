@@ -1,19 +1,17 @@
 import { Formik } from "formik";
 import { useState } from "react";
-import  styles from './NewRecipe.module.css'
+import  styles from './NewRecipe.module.css';
+import axios from 'axios';
 
 const NewRecipeScreen = () => {
   const [ingredients, setIngredients] = useState([]);
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("");
 
-  const ingDisplay = {
-    name: "",
-    quantity: "",
-  };
+ 
 
   const addIngredient = () => {
-    setIngredients([...ingredients, ingDisplay]);
+    setIngredients([...ingredients, {name, quantity}]);
     setName("");
     setQuantity("");
   };
@@ -29,10 +27,26 @@ const NewRecipeScreen = () => {
     instructions: "",
   };
   const onSubmit = (values) => {
+    values.ingredients = ingredients;
     console.log(values);
-  };
+  
+      axios.post(`https://recipes.devmountain.com/recipes`, values)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })}
+
+  const ingredientDisplay = ingredients.map((ing) => {
+    return (
+      <li>
+        {ing.quantity} {ing.name}
+      </li>
+    );
+  });
   return (
-    <section>
+    <div className="form_container">
       <h1>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
@@ -108,6 +122,8 @@ const NewRecipeScreen = () => {
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
               />
+
+              <ul>{ingredientDisplay}</ul>
               <br />
               <button
                 type="button"
@@ -121,11 +137,15 @@ const NewRecipeScreen = () => {
                 value={values.instructions}
                 onChange={handleChange}
               />
+              <br />
+              <button
+                type="submit"
+              >Save</button>
             </div>
           </form>
         )}
       </Formik>
-    </section>
+    </div>
   );
 };
 
