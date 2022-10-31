@@ -12,18 +12,18 @@ const Header = () => {
         end
         to="" 
         style={({ isActive }) => ({
-          color: isActive ? '#fff' : 'none',
+          color: isActive ? '#fff' : 'whitesmoke',
           textDecoration: isActive ? 'underline' : 'none',
           fontWeight: isActive ? '600' : '',
         })}
         
           >Home</NavLink>
         <NavLink to="/new-recipe" style={({ isActive }) => ({
-          color: isActive ? '#fff' : '#fff',
+          color: isActive ? '#fff' : 'whitesmoke',
           textDecoration: isActive ? 'underline' : 'none',
           fontWeight: isActive ? '600' : '',
         })}
-           >Add to Recipe
+           >Add Recipe
         </NavLink>
       </nav>
     </header>
