@@ -12,7 +12,7 @@ const Header = () => {
         end
         to="" 
         style={({ isActive }) => ({
-          color: isActive ? '#fff' : 'black',
+          color: isActive ? '#fff' : 'none',
           textDecoration: isActive ? 'underline' : 'none',
           fontWeight: isActive ? '600' : '',
         })}

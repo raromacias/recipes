@@ -1,0 +1,22 @@
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content:space-around;
+    align-items: center;
+
+    
+ }
+
+ .recipe-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+ .see_more {
+    
+    width: 10em;
+    background-color:  #578B87;
+ }

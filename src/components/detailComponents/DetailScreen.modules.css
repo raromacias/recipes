@@ -1,0 +1,29 @@
+.recipeingredientbox {
+	display: flex;
+    width: 60%;
+    flex-direction: row;
+	justify-content: space-around;
+	gap: 15px
+}
+.recipe-container{
+	width: 300px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 3px;
+	
+}
+
+.instructions-box {
+    max-width: 550px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+
+.detail_img {
+    height: 20%
+       
+ }

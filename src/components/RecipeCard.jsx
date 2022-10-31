@@ -1,15 +1,18 @@
 import { NavLink } from "react-router-dom";
+import './RecipeCard.modules.css'
+
 const RecipeCard = ({recipe}) => {
     
 
     return (
         <div className="recipe-card" >
             <div className="image">
-                <img  style={{height: '100px', width: '100px' }} src={`${recipe.image_url}`}/>
+                <img   src={`${recipe.image_url}`}/>
                 {recipe.recipe_name}
             </div>
+            <button className="see_more">
             <NavLink to={`/recipe/${recipe.recipe_id}`}>See More</NavLink>
-           
+            </button>
         </div>
     );
 }
