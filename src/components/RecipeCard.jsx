@@ -10,7 +10,7 @@ const RecipeCard = ({recipe}) => {
                 <img className="recipeimg"  src={`${recipe.image_url}`}/>
                 {recipe.recipe_name}
             </div>
-            <button className="see_more">
+            <button className="see_more" >
             <NavLink to={`/recipe/${recipe.recipe_id}`}>See More</NavLink>
             </button>
         </div>
