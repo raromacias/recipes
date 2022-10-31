@@ -1,11 +1,12 @@
 .ad-banner{
-    font-size:large;
+    
     font-weight: bold;
-    justify-content: center;
+    justify-content:center;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 30%;
+    margin: 28em;
+    gap: 30px;
     
     
 
