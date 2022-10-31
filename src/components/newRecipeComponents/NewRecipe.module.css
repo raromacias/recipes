@@ -10,17 +10,19 @@
 }
 
  h1 {
-    font-size: larger;
-    color: #D97236;
+    
+    color: black;
    
 }
 
-.formcontainer {
+
+section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
     
-}
+ }
 .radio-container {
     display: flex;
     width: 100%;
@@ -33,6 +35,7 @@ form {
     flex-direction: column;
     align-items: center;
     height: fit-content;   
+   
   }
 
   form input, form textarea {
