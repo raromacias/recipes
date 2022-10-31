@@ -46,7 +46,7 @@ const NewRecipeScreen = () => {
     );
   });
   return (
-    <div className="form-container">
+    <section style={{alignItems:'center'}}className="formcontainer">
       <h1>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
@@ -153,7 +153,7 @@ const NewRecipeScreen = () => {
           </form>
         )}
       </Formik>
-    </div>
+    </section>
   );
 };
 

@@ -18,21 +18,22 @@ const DetailScreen = () => {
     <div>
       <div className='detail_img'>
     <div 
+    className='detailpic'
     style={{
       background: `linear-gradient(
         190deg,
         rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.8)),
-        url(${recipe.image_url})`,
-       backgroundSize: 'cover',
-        objectPosition: 'center',
-        objectFit: 'cover',
-        backgroundRepeat: 'no-repeat',
-        height: '50vh',
-        width: '100vw',
-        display: 'flex',
-        justifyContent: 'center',
-        alignContent: 'center'
+        url(${recipe.image_url})`
+      
+        // objectPosition: 'center',
+        // objectFit: 'cover',
+        // backgroundRepeat: 'no-repeat',
+        // height: '450px',
+        // width: '100vw',
+        // display: 'flex',
+        // justifyContent: 'center',
+        // alignContent: 'center'
 
        
     }}>
@@ -57,14 +58,14 @@ const DetailScreen = () => {
         })}
       </div>
 
-     </div>
+     
       <div className='instructions-box'>
         <h2>Instructions</h2>
         <p style={{whiteSpace: 'pre-wrap'}}>
            {recipe.instructions && JSON.parse(recipe.instructions)}
         </p>
       </div>
-   
+   </div>
    </div>
      
   );

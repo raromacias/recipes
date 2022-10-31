@@ -8,10 +8,16 @@
     
 }
 
-.form-container {
+.formcontainer h1 {
+    font-size: larger;
+}
+
+.formcontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
+    max-width: 500px;
+    margin: auto;
     
 }
 .radio-container {
@@ -28,7 +34,8 @@ form {
     width: 30vw;
     height: fit-content;
     gap: 15px;
-    margin-top: 30px;
+   
+    
   }
 
   form input, form textarea {
@@ -71,4 +78,8 @@ form {
   }
   ul {
     width: 50%;
+  }
+
+textarea {
+    width: 100%;
   }
