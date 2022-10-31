@@ -46,12 +46,13 @@ const NewRecipeScreen = () => {
     );
   });
   return (
-    <div className="form_container">
+    <div className="form-container">
       <h1>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form onSubmit={handleSubmit}>
-            <div>
+            <div className="input-container">
+
               <input
                 placeholder="Title your Recipe!"
                 value={values.recipeName}
@@ -94,6 +95,7 @@ const NewRecipeScreen = () => {
               {""}
               Drink <br />
               </div>
+              <div className="input-container">
               <input
                 placeholder="Prep Time"
                 value={values.prepTime}
@@ -113,6 +115,9 @@ const NewRecipeScreen = () => {
                 name="serves"
               />
               <br />
+              </div>
+              <div className="input-container">
+              <div className="ingredient-inputs">
               <input
                 placeholder="Ingredient"
                 value={name}
@@ -124,8 +129,9 @@ const NewRecipeScreen = () => {
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
               />
-
+              </div>
               <ul>{ingredientDisplay}</ul>
+              </div>
               <br />
               <button
                 type="button"
@@ -140,7 +146,7 @@ const NewRecipeScreen = () => {
                 onChange={handleChange}
               />
               <br />
-              <button
+              <button style={{backgroundColor:'#578B87', color: 'white'}}
                 type="submit"
               >Save</button>
             </div>
