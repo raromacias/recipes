@@ -6,8 +6,8 @@ const RecipeCard = ({recipe}) => {
 
     return (
         <div className="recipe-card" >
-            <div className="image">
-                <img   src={`${recipe.image_url}`}/>
+            <div className="image-card">
+                <img className="recipeimg"  src={`${recipe.image_url}`}/>
                 {recipe.recipe_name}
             </div>
             <button className="see_more">

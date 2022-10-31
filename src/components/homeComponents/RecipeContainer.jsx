@@ -19,7 +19,7 @@ const RecipeContainer = ({recipes}) => {
       <BiSearchAlt2 size='3em' color="#DA7635"/>
       <input value={inputText} type="text" placeholder='Search for a recipe' onChange={(e)=> setInputText(e.target.value)}/>
       </div>
-      <div className='recipe-container'>
+      <div className='homerecipes'>
       {recipeDisplay ? recipeDisplay: <h2>No Recipes</h2>}
       </div>
       </div>

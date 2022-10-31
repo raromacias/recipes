@@ -65,6 +65,7 @@ const NewRecipeScreen = () => {
                 name="imageURL"
               />
               <br />
+              <div className="radio-container">
               <input
                 type="radio"
                 name="type"
@@ -92,6 +93,7 @@ const NewRecipeScreen = () => {
               />
               {""}
               Drink <br />
+              </div>
               <input
                 placeholder="Prep Time"
                 value={values.prepTime}

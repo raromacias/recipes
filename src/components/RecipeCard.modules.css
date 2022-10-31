@@ -1,4 +1,4 @@
-.recipe-card{
+.recipe-card {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -7,9 +7,20 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     justify-content:space-around;
     align-items: center;
+  }
+  .image-card{
+    width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+  }
+ 
 
-    
- }
+
+  .recipeimg {
+    object-fit: cover;
+	height: 100%;
+	width:100%;
+  }
 
  .recipe-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -20,3 +31,5 @@
     width: 10em;
     background-color:  #578B87;
  }
+
+ 

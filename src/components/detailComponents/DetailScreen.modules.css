@@ -1,10 +1,17 @@
 .recipeingredientbox {
-	display: flex;
-    width: 60%;
-    flex-direction: row;
-	justify-content: space-around;
-	gap: 15px
-}
+	
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+      }
+
+      .recipeingredientbox_container h2 {
+        color: black;
+        text-align: center;
+      }
+
 .recipe-container{
 	width: 300px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.6);

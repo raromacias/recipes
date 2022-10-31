@@ -14,12 +14,14 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <main>
       <Routes>
          <Route index element={<HomeScreen />}/>
          <Route path='new-recipe' element={<NewRecipeScreen />} />
          <Route path='recipe/:id' element={<DetailScreen/>}/>
          <Route path='*' element={<NotFound />}/>
       </Routes>
+      </main>
       <Footer />
     </div>
   );
