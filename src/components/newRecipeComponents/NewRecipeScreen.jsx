@@ -46,7 +46,7 @@ const NewRecipeScreen = () => {
     );
   });
   return (
-    <section style={{margin:'auto'}} className="formcontainer">
+    <section  className="formcontainer">
       <h1>Tell us about your Recipe!</h1>
       <Formik initialValues={initialValues} onSubmit={onSubmit}>
         {({ values, handleChange, handleSubmit }) => (
@@ -146,7 +146,8 @@ const NewRecipeScreen = () => {
                 onChange={handleChange}
               />
               <br />
-              <button style={{backgroundColor:'#578B87', color: 'white'}}
+              <button 
+                className="save-btn"
                 type="submit"
               >Save</button>
             </div>

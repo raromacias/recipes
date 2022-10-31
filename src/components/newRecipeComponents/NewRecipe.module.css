@@ -1,15 +1,17 @@
 .orange_btn {
-    background-color: orange;
+    background-color:#D97236;
     height: 2em;
-    width: 10em;
+    width: 8em;
     color: white;
     text-align: center;
+    border: none;
 
     
 }
 
-.formcontainer h1 {
+ h1 {
     font-size: larger;
+    color: #D97236;
    
 }
 
@@ -17,8 +19,6 @@
     display: flex;
     flex-direction:column;
     align-items: center;
-    max-width: 500px;
-    margin: auto;
     
 }
 .radio-container {
@@ -32,11 +32,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
-    height: fit-content;
-    gap: 15px;
-   
-    
+    height: fit-content;   
   }
 
   form input, form textarea {
@@ -84,3 +80,11 @@ form {
 textarea {
     width: 100%;
   }
+
+   button {
+  background-color:#578B87;
+  color: white;
+  width: 8em;
+  height: 2em;
+  
+}
